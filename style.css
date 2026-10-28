@@ -20,7 +20,7 @@ p.meta{color:var(--muted);margin:0 0 1.5rem}
 a{color:var(--accent)}
 ul{padding-inline-start:1.25rem}
 li{margin:.35rem 0}
-.email{color:var(--energy);overflow-wrap:anywhere}
+.email{color:var(--energy);overflow-wrap:anywhere;font-weight:700;text-decoration:underline;text-underline-offset:3px}
 footer{padding:1.5rem 0 3rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.9rem}
 .cards{display:grid;gap:12px;margin-top:1.5rem}
 .cards a{display:block;background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:16px 18px;text-decoration:none;color:var(--fg);font-weight:700}
