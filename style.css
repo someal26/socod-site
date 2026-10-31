@@ -77,3 +77,22 @@ footer p{margin:.25rem 0}
 .root .appicon{margin:0 auto 1rem}
 .root .pill{margin:.5rem 0 1rem}
 .root .cards{text-align:start}
+.nw{white-space:nowrap}
+.hero-visual{display:none;margin:0}
+
+/* Desktop: wider landing page, two-column hero */
+@media (min-width:900px){
+.home header,.home main,.home footer{max-width:62rem}
+.home .hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:4rem;align-items:center;padding:3rem 0 1.5rem}
+.home .hero .appicon{width:72px;height:72px;border-radius:16px}
+.hero-visual{display:flex;justify-content:center}
+.hero-visual img{width:340px;height:auto;border-radius:32px;border:10px solid var(--card);box-shadow:0 24px 60px rgb(11 61 43/.22),0 0 0 1px var(--rule)}
+.hero-icon img{width:240px;height:240px;border:0;border-radius:54px}
+.home .hero-text .appicon{display:block}
+.steps{grid-template-columns:repeat(3,1fr)}
+.steps li{padding:64px 18px 18px}
+[dir=rtl] .steps li{padding:64px 18px 18px}
+.faq{max-width:44rem}
+.home .final{padding:40px}
+}
+@media (min-width:900px){.home .hero:has(.hero-icon) .hero-text .appicon{display:none}}
