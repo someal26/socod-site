@@ -1,0 +1,122 @@
+[
+  {
+    "file": "socod-dawn-walk-4x5-2x.jpg",
+    "dimensions": [
+      4320,
+      5400
+    ],
+    "format": "JPEG",
+    "bytes": 2424241,
+    "sha256": "ee477adbd224c62d0dcd7d607f98a3c591aa6bbe265a9513d1724639b4b4133f",
+    "native": false,
+    "upscaled": true
+  },
+  {
+    "file": "socod-dawn-walk-4x5-400.webp",
+    "dimensions": [
+      400,
+      500
+    ],
+    "format": "WEBP",
+    "bytes": 27658,
+    "sha256": "797045711a9f2459612e877c2f00e8d914f58dd1d4477817789b0661b9f715fc",
+    "native": false,
+    "upscaled": false
+  },
+  {
+    "file": "socod-dawn-walk-4x5-800.webp",
+    "dimensions": [
+      800,
+      1000
+    ],
+    "format": "WEBP",
+    "bytes": 100234,
+    "sha256": "b03974629f2f01e54a5fb07952892a575b7d5e6902c4ba4523cbb8f3f63fa2c6",
+    "native": false,
+    "upscaled": false
+  },
+  {
+    "file": "socod-dawn-walk-4x5-native.png",
+    "dimensions": [
+      1122,
+      1402
+    ],
+    "format": "PNG",
+    "bytes": 2357354,
+    "sha256": "e2e4350f3ce9bbf0921b5b796948e9a348fba8d22a3f82b2a5bf5a5dac9acca3",
+    "native": true,
+    "upscaled": false
+  },
+  {
+    "file": "socod-dawn-walk-4x5.jpg",
+    "dimensions": [
+      2160,
+      2700
+    ],
+    "format": "JPEG",
+    "bytes": 864832,
+    "sha256": "fe4dbdb924a79a3e38d6f8f0f25414398040bb2d52fee7902c012cfb4c950946",
+    "native": false,
+    "upscaled": true
+  },
+  {
+    "file": "socod-after-walk-1x1-2x.jpg",
+    "dimensions": [
+      4096,
+      4096
+    ],
+    "format": "JPEG",
+    "bytes": 1786289,
+    "sha256": "fc4d0b07b30437d09afa1f8cb10783185dc280ff7d82e4b88922e7dcecedd0e2",
+    "native": false,
+    "upscaled": true
+  },
+  {
+    "file": "socod-after-walk-1x1-400.webp",
+    "dimensions": [
+      400,
+      400
+    ],
+    "format": "WEBP",
+    "bytes": 29212,
+    "sha256": "0194c63ef56f7b31047d7187385e111acbea83c95f397c19b135756b899a5a8d",
+    "native": false,
+    "upscaled": false
+  },
+  {
+    "file": "socod-after-walk-1x1-800.webp",
+    "dimensions": [
+      800,
+      800
+    ],
+    "format": "WEBP",
+    "bytes": 75778,
+    "sha256": "1710d348a2303e591b8b0207cb02ec74b186178b0cd285ff11d23040ca9a1972",
+    "native": false,
+    "upscaled": false
+  },
+  {
+    "file": "socod-after-walk-1x1-native.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "format": "PNG",
+    "bytes": 2221685,
+    "sha256": "ea84385b013a4bf088ad465af871b4101affa01f1af648bfa9bbd3cea51265ce",
+    "native": true,
+    "upscaled": false
+  },
+  {
+    "file": "socod-after-walk-1x1.jpg",
+    "dimensions": [
+      2048,
+      2048
+    ],
+    "format": "JPEG",
+    "bytes": 649047,
+    "sha256": "f62f79dc43f4698024b57b25953f3936ca5403a878df6688145d0f10acc32fb2",
+    "native": false,
+    "upscaled": true
+  }
+]
