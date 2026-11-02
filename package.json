@@ -1,0 +1,8 @@
+{
+  "name": "socod-site",
+  "private": true,
+  "scripts": {
+    "test": "bun test",
+    "test:db": "bash tests/db/run.sh"
+  }
+}

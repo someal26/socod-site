@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src https://bckhcixpwnrxzldynfuu.supabase.co; form-action 'none'; base-uri 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#f6f8f5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101512" media="(prefers-color-scheme: dark)">
+<title>Socod Admin</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="stylesheet" href="admin.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header class="bar">
+  <span class="brand"><img src="../assets/favicon-32.png" width="24" height="24" alt=""> Socod Admin</span>
+  <button id="signout" class="ghost" type="button" hidden>Sign out</button>
+</header>
+
+<main id="main">
+  <p id="notice" class="notice" role="status" aria-live="polite" hidden></p>
+
+  <!-- Step 1: email + password. The page holds no data; nothing shows until the server says yes. -->
+  <section id="v-signin" class="panel">
+    <h1>Sign in</h1>
+    <p class="muted">For the Socod founder only. You need your admin email, password and authenticator app.</p>
+    <form id="f-signin" novalidate>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="username" required>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required minlength="8">
+      <button id="b-signin" type="submit" class="primary">Continue</button>
+    </form>
+  </section>
+
+  <!-- Step 2a: first time only. Link an authenticator app. -->
+  <section id="v-enroll" class="panel" hidden>
+    <h1>Set up your code</h1>
+    <p class="muted">Open an authenticator app (Apple Passwords, Google Authenticator or similar), scan this QR code, then type the 6-digit code it shows.</p>
+    <img id="qr" class="qr" alt="QR code for your authenticator app" width="180" height="180">
+    <p class="muted small">Can't scan? Enter this key by hand:</p>
+    <p id="secret" class="secret"></p>
+    <form id="f-enroll" novalidate>
+      <label for="code-enroll">6-digit code</label>
+      <input id="code-enroll" class="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required>
+      <button type="submit" class="primary">Confirm</button>
+    </form>
+  </section>
+
+  <!-- Step 2b: every sign-in after that. -->
+  <section id="v-code" class="panel" hidden>
+    <h1>Enter your code</h1>
+    <p class="muted">Open your authenticator app and type the 6-digit code for Socod admin.</p>
+    <form id="f-code" novalidate>
+      <label for="code">6-digit code</label>
+      <input id="code" class="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required>
+      <button type="submit" class="primary">Open dashboard</button>
+    </form>
+  </section>
+
+  <!-- Step 3: the dashboard. Built entirely in script from server data after sign-in. -->
+  <section id="v-dash" hidden>
+    <div class="dash-head">
+      <div>
+        <h1>Socod today</h1>
+        <p id="updated" class="muted small"></p>
+      </div>
+      <button id="refresh" class="ghost" type="button">Refresh</button>
+    </div>
+    <div id="tiles" class="tiles"></div>
+    <div id="panels" class="panels"></div>
+  </section>
+</main>
+<footer class="foot">Private page · signs out after 15 minutes idle · SoMeal Technologies</footer>
+</body>
+</html>
